@@ -24,7 +24,7 @@ function ChatScreen() {
     const handleSend = e => {       // e means it is taking an event
         e.preventDefault();
         setMessages([...messages, {message: input}]);
-        setInput('yepp');
+        setInput('');               // reseting state by setting setInput() to blank
     }
 
     return (

@@ -17,7 +17,7 @@ function App() {
           {/* ':' is kindaa wildcard, after it anyvalue can go adead nd it can be a valid url */}
           <Route path="/chat/:person" element={
             <div>
-              <HHeader backButton="/chat/"/>  
+              <HHeader backButton="/chat"/>  
               <ChatScreen />
             </div>
           }/>
