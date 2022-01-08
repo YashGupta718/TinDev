@@ -1,0 +1,31 @@
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    height: 70px;
+    border-bottom: 1px solid rgb(243, 236, 236);
+}
+
+/* these basically are anchor tag */
+a{
+    /* remove underlining */
+    text-decoration: none;
+    /* To not change color to blue when link is already clicked */
+    color: inherit;
+}
+
+.chat_details{
+    /* Allots max weight to this child */
+    flex: 1;            
+    padding-left: 15px;
+    padding-right: 10px; 
+}
+
+.chat_timestamp{
+    color: lightgrey
+}
+
+.chat_details p{
+    color: gray;
+}

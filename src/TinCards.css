@@ -1,0 +1,31 @@
+.card{
+    width: 500px; 
+    position: relative;
+    padding: 20px;
+    /* margin: 15px; */
+    max-width: 60vw;
+    height: 50vh;
+    /* for Centering the pic  */
+    object-fit:scale-down;
+    background-position:top;        
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.card h3{
+    position: absolute;
+    bottom: 10px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    /* text-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);; */
+}
+
+.swipe{
+    position: absolute;
+}
