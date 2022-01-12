@@ -5,16 +5,7 @@ import database from './firebase';
 //import { unsubscribe } from '@mui/icons-material';
 
 function TinCards() {
-    const [people, setPeople] = useState([
-        {
-            name: "Ratan Tata",
-            url: "https://static.toiimg.com/thumb/resizemode-4,msid-57601909,width-1200,height-900/57601909.jpg"
-        },
-        {
-            name: "Steve jobs",
-            url: 'https://cdn.vox-cdn.com/thumbor/D4kZFmpB4N-bDT3hu-AziaaWkyY=/0x123:706x520/1600x900/cdn.vox-cdn.com/imported_assets/847184/stevejobs.png'
-        }
-    ]);
+    const [people, setPeople] = useState([]);
     //useEffect -- piece of code which runs based on a condition
     useEffect(() => {
         const unsubscribe = database.collection('people').onSnapshot(snapshot => (
